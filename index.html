@@ -6,12 +6,26 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <!-- font awesome -->
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  
   <!-- main css -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
   <link rel="stylesheet" type="text/css" href="css/skins/color-1.css">
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-1" href="css/skins/color-1.css">
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-2" href="css/skins/color-2.css" disabled>
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-3" href="css/skins/color-3.css" disabled>
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-4" href="css/skins/color-4.css" disabled>
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-5" href="css/skins/color-5.css" disabled>
+  <link rel="stylesheet" type="text/css" href="css/style-switcher.css">
 </head>
 <body>
-
+<!-- preloader start -->
+ <div class="preloader">
+  <div class="box">
+    <div></div><div></div><div></div>
+  </div>
+ </div>
+<!-- preloader end -->
 <!-- header start -->
 <header class="header">
   <div class="container">
@@ -34,21 +48,24 @@
   <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
   <div class="nav-menu-inner">
     <ul>
-      <li><a href="#" class="inner-shadow active">home</a></li>
-      <li><a href="#" class="outer-shadow hover-in-shadow">about</a></li>
-      <li><a href="#" class="outer-shadow hover-in-shadow">services</a></li>
-      <li><a href="#" class="outer-shadow hover-in-shadow">portfolio</a></li>
-      <li><a href="#" class="outer-shadow hover-in-shadow">testimonial</a></li>
-      <li><a href="#" class="outer-shadow hover-in-shadow">contact</a></li>
+      <li><a href="#home" class="link-item inner-shadow active">home</a></li>
+      <li><a href="#about" class="link-item outer-shadow hover-in-shadow">about</a></li>
+      <li><a href="#services" class="link-item outer-shadow hover-in-shadow">services</a></li>
+      <li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">portfolio</a></li>
+      <li><a href="#testimonial" class="link-item outer-shadow hover-in-shadow">testimonial</a></li>
+      <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">contact</a></li>
     </ul>
   </div>
   <!--copyright text-->
-  <p class="copyright-text">&copy; 2022 Raunak Gupta</p>
+  <p class="copyright-text">&copy; 2024 Raunak Gupta</p>
+
+  <div class="fade-out-effect">
+  </div>
 </nav>
 <!--navigation menu end-->
 
 <!--home section start-->
-<section class="home-section section">
+<section class="home-section section active" id="home">
   <!--wrap effect start-->
   <div class="effect-wrap">
     <div class="effect effect-1">
@@ -71,17 +88,717 @@
         <p>Hello</p> 
         <h2>I'm Raunak Gupta</h2>
         <h1>Web Designer & Developer</h1>
-        <a href="#" class="btn-1 outer-shadow hover-in-shadow">More About Me</a>
+        <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
       </div>
       <div class="home-img">
         <div class="img-box inner-shadow">
-          <img src="img/profile.jpeg" class="outer-shadow" alt="profile-pic">
+          <img src="img/profile.jpg" class="outer-shadow" alt="profile-pic">
         </div>    
       </div>
     </div>
   </div>
 </section>
 <!--home section end-->
+
+<!--about section start -->
+<section class="about-section section" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2 data-heading="main-info">About Me</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="about-img">
+        <div class="img-box inner-shadow">
+          <img src="img/profile.jpg" class="outer-shadow" alt="profile-pic">
+        </div>
+        <!--social links start-->
+        <div class="social-links">
+          <a href="https://github.com/raunak-gupta-12" target="_blank" class="outer-shadow hover-in-shadow"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/raunak.gupta_12?igsh=MWxwa2tvZGJzZHp2MA==" target="_blank" class="outer-shadow hover-in-shadow"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/9452420815" target="_blank" class="outer-shadow hover-in-shadow"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/raunak-gupta-3m02/"  target="_blank"  class="outer-shadow hover-in-shadow"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <!--social links end--> 
+
+      </div>
+      <div class="about-info">
+        <p><span>Hi, I'm Raunak Gupta, a Frontend UI/UX Developer and Graphic Designer.</span>
+          Welcome to my portfolio! My name is Raunak Gupta, and I specialize in frontend UI/UX development. Additionally, I have extensive experience in graphic design, allowing me to create visually compelling and user-friendly interfaces.</p>
+          <p>Thank you</p>
+          <a href="cv.pdf" target="_blank" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
+          <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
+      </div>
+    </div>
+    <!--about tabs start-->
+    <div class="row">
+      <div class="about-tabs">
+        <span class="tab-item outer-shadow active" data-target=".skills">skills</span>
+        <span class="tab-item" data-target=".experience">experience</span>
+        <span class="tab-item" data-target=".education">education</span>
+      </div>
+    </div>
+    <!--about tabs end-->
+    <!--skills start-->
+    <div class="row">
+      <div class="skills tab-content active">
+        <div class="row">
+          <!--skill item start-->
+          <div class="skill-item">
+            <p>Html</p>
+            <div class="progress inner-shadow">
+              <div class="progress-bar" style="width: calc(95% - 14px)">
+                <span>95%</span>
+              </div>
+            </div>
+          </div>
+          <!--skill item end-->
+          <!--skill item start-->
+          <div class="skill-item" >
+            <p>Javascript</p>
+            <div class="progress inner-shadow">
+              <div class="progress-bar" style="width: calc(70% - 14px)">
+                <span>70%</span>
+              </div>
+            </div>
+          </div>
+          <!--skill item end-->
+          <div class="skill-item" >
+            <p>CSS</p>
+            <div class="progress inner-shadow">
+              <div class="progress-bar" style="width: calc(90% - 14px)">
+                <span>90%</span>
+              </div>
+            </div>
+          </div>
+          <!--skill item end-->
+          <!--skill item end-->
+          <div class="skill-item" >
+            <p>C/C++</p>
+            <div class="progress inner-shadow">
+              <div class="progress-bar" style="width: calc(80% - 14px)">
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+          <!--skill item end-->
+          <!--skill item end-->
+          <div class="skill-item" >
+            <p>Java</p>
+            <div class="progress inner-shadow">
+              <div class="progress-bar" style="width: calc(80% - 14px)">
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+          <!--skill item end-->
+          <!--skill item end-->
+          <div class="skill-item" >
+            <p>Graphics Designing</p>
+            <div class="progress inner-shadow">
+              <div class="progress-bar" style="width: calc(95% - 14px)">
+                <span>95%</span>
+              </div>
+            </div>
+          </div>
+          <!--skill item end-->
+        </div>
+      </div>
+    </div>
+    <!--skills end-->
+        <!--experience start -->
+<div class="row">
+  <div class="experience tab-content">
+    <div class="row">
+      <div class="timeline">
+        <div class="row">
+                     <!--timeline item start-->
+                     <div class="timeline-item">
+                      <div class="timeline-item-inner outer-shadow">
+                        <i class="fas fa-briefcase icon"></i>
+                        <span>Sept, 2023 - Sept, 2024</span>
+                        <h3>District Graphic Designer</h3>
+                        <h4>Rotaract District 3011, India</h4>
+                        <p>I utilize my creativity and design expertise as the Rotaract District 3011 District Graphics Designer, producing
+                          compelling visuals that effectively promote community initiatives and events.</p>
+                      </div>
+                    </div>
+                    <!--timeline item end-->
+                    <!--timeline item start-->
+                    <div class="timeline-item">
+                      <div class="timeline-item-inner outer-shadow">
+                        <i class="fas fa-briefcase icon"></i>
+                        <span>July, 2023 - March,2024</span>
+                        <h3>Graphic Designer Intern</h3>
+                        <h4>Riverside Visa, India</h4>
+                        <p>As a Graphics Design Intern, I created logos and posters, and managed social media and advertisements,
+                          significantly enhancing the online presence and brand visibility of my company.</p>
+                      </div>
+                    </div>
+                    <!--timeline item end-->
+          <!--timeline item start-->
+          <div class="timeline-item">
+            <div class="timeline-item-inner outer-shadow">
+              <i class="fas fa-briefcase icon"></i>
+              <span>Sept, 2022 - March, 2023</span>
+              <h3>Graphic Designer Intern</h3>
+              <h4>Beyond Immigration, India</h4>
+              <p>Avoiding TLE during contests is super-critical. Solve these problems in O(N log(N)) time complexity to learn the right approach.
+                Target to solve 2-3 problems per day</p>
+            </div>
+          </div>
+          <!--timeline item end-->
+
+ 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--experience end -->
+
+<!--education start-->
+<div class="row">
+  <div class="education tab-content">
+    <div class="row">
+      <div class="timeline">
+        <div class="row">
+          <!--timeline item start-->
+          <div class="timeline-item">
+            <div class="timeline-item-inner outer-shadow">
+              <i class="fas fa-graduation-cap icon"></i>
+              <span>2021 - Present</span>
+              <h3>Btech in Computer Science & Engineering</h3>
+              <h4>Galgotias College of Engineering & Technology, India</h4>
+              <p>Pursuing a Bachelor of Technology in Computer Science and Engineering, building a strong foundation in programming, software development, and cutting-edge technology.</p>
+            </div>
+          </div>
+          <!--timeline item end-->
+           <!--timeline item start-->
+           <div class="timeline-item">
+            <div class="timeline-item-inner outer-shadow">
+              <i class="fas fa-graduation-cap icon"></i>
+              <span>2019 - 2020</span>
+              <h3>12th Standard</h3>
+              <h4>Dr. Virendra Swarup Public School Cantt, India</h4>
+              <p>I successfully completed my 12th standard with a focus on science and computer studies, achieving a first division with an excellent score. My strong academic background in these fields has equipped me with a solid foundation in both theoretical and practical aspects of technology, setting the stage for my ongoing journey in graphic design and software development.</p>
+            </div>
+          </div>
+          <!--timeline item end-->
+           <!--timeline item start-->
+           <div class="timeline-item">
+            <div class="timeline-item-inner outer-shadow">
+              <i class="fas fa-graduation-cap icon"></i>
+              <span>2017 - 2018</span>
+              <h3>10th Standard</h3>
+              <h4>Dr. Virendra Swarup Public School Cantt, India</h4>
+              <p>I completed my 10th standard with a focus on science and computer studies, achieving first division with an excellent score.</p>
+            </div>
+          </div>
+          <!--timeline item end-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--education end-->
+  </div>
+</section>
+<!--about section start-->
+<section class="service-section section" id="services">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2 data-heading="Services">What i do</h2>
+      </div>
+    </div>
+    <div class="row">
+      <!--service item start-->
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="icon inner-shadow">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>I specialize in responsive design, ensuring flawless adaptation to devices. Services include mobile optimization, flexible layouts, cross-browser compatibility, touch-friendly interfaces, and fast loading speeds for a smooth user experience.</p>
+        </div>
+      </div>
+      <!--service item end-->
+      <!--service item start-->
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="icon inner-shadow">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Web Design</h3>
+          <p>I create modern, responsive websites tailored to your needs. Services include custom design, mobile optimization, secure e-commerce, SEO, CMS setup, and ongoing maintenance to support your business goals effectively.</p>
+        </div>
+      </div>
+      <!--service item end-->
+      <!--service item start-->
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="icon inner-shadow">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Graphic Design</h3>
+          <p>I offer logo design, posters, social media graphics, ads, branding materials, custom illustrations, and video editing services. My goal is to enhance your brand's visibility through high-quality design that communicates effectively.</p>
+        </div>
+      </div>
+      <!--service item end-->
+      <!--service item start-->
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="icon inner-shadow">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Clean Code</h3>
+          <p>I specialize in clean code services, emphasizing efficiency and maintainability for optimal performance. Offerings include refactoring, optimized algorithms, best practices, documentation, and thorough testing.</p>
+        </div>
+      </div>
+      <!--service item end-->
+      <!--service item start-->
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="icon inner-shadow">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>seo marketing</h3>
+          <p>I specialize in SEO marketing, boosting online visibility through keyword research, on-page/off-page optimization, content strategy, and analytics for improved search rankings and audience engagement.</p>
+        </div>
+      </div>
+      <!--service item end-->
+      <!--service item start-->
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="icon inner-shadow">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3>Great Support</h3>
+          <p>In web development and graphic design, I provide exceptional support through responsive communication, expert guidance, technical expertise, continuous improvement, and personalized client care.</p>
+        </div>
+      </div>
+      <!--service item end-->
+    </div>
+  </div>
+</section>
+
+<!--service end-->
+<!--portfolio start-->
+<section class="portfolio-section section" id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2 data-heading="portfolio">Latest Works</h2>
+      </div>
+    </div>
+    <!--portfolio filter start-->
+    <div class="row">
+      <div class="portfolio-filter">
+        <span class="filter-item outer-shadow active" data-target="all">all</span>
+        <span class="filter-item" data-target="web-application">web application</span>
+        <span class="filter-item" data-target="graphic design">graphic design</span>
+        <span class="filter-item" data-target="mobile-application">mobile application</span>
+        <span class="filter-item" data-target="e-commerce">e commerce</span>
+      </div>
+    </div>
+    <!--portfolio filter end-->
+    <!--portfolio items start-->
+    <div class="row portfolio-items">
+      <!--portfolio item start-->
+      <div class="portfolio-item" data-category="web-application">
+        <div class="portfolio-item-inner outer-shadow">
+          <div class="portfolio-item-img">
+            <img src="img/portfolio/thumb/project-1.png" alt="portfolio" data-screenshots="img/portfolio/large/project-1/1.png,img/portfolio/large/project-1/2.png,img/portfolio/large/project-1/3.png,img/portfolio/large/project-1/4.png,img/portfolio/large/project-1/5.png,img/portfolio/large/project-1/6.png,img/portfolio/large/project-1/7.png,img/portfolio/large/project-1/8.png">
+            <!--view project btn-->
+            <span class="view-project">view project</span>
+          </div>
+          <p class="portfolio-item-title">personal portfolio</p>
+          <!--portfolio item details start-->
+          <div class="portfolio-item-details">
+            <div class="row">
+              <div class="description">
+                <h3>Project Brief:</h3>
+                <p>This project contains a fully functional personal portfolio website meticulously designed and developed to optimize SEO. Showcasing professional experience, skills, education, and contact information, the site features both dark and light themes with customized color-changing elements for enhanced user experience. Constructed using HTML, CSS, and JavaScript, it ensures seamless navigation and responsiveness across devices. With a minimalist design and strategically placed content—including interactive charts and a contact form—the portfolio effectively highlights achievements and capabilities. This project exemplifies expertise in frontend development and UI/UX design, aimed at maximizing visibility and engagement through strategic search engine optimization.</p>
+              </div>
+              <div class="info">
+                <h3>Project Info</h3>
+                <u1>
+                  <li>Date - <span>15th July, 2024</span></li>
+                  <li>Client - <span>Personal Project</span></li>
+                  <li>Tools - <span>html,css,js</span></li>
+                  <li>Web - <span><a href="#">www.domain.com</a></span></li>
+                </u1>
+              </div>
+            </div>
+          </div>
+          <!--portfolio item details end-->
+        </div>
+      </div>
+      <!--portfolio item end-->
+            <!--portfolio item start-->
+            <div class="portfolio-item" data-category="e-commerce">
+              <div class="portfolio-item-inner outer-shadow">
+                <div class="portfolio-item-img">
+                  <img src="img/portfolio/thumb/project-2.jpg" alt="portfolio" data-screenshots="img/portfolio/large/project-2/1.jpg,img/portfolio/large/project-2/2.jpg,img/portfolio/large/project-2/3.jpg,img/portfolio/large/project-2/4.jpg,img/portfolio/large/project-2/5.png">
+                  <!--view project btn-->
+                  <span class="view-project">view project</span>
+                </div>
+                <p class="portfolio-item-title">Food Ordering Website</p>
+                <!--portfolio item details start-->
+                <div class="portfolio-item-details">
+                  <div class="row">
+                    <div class="description">
+                      <h3>Project Brief:</h3>
+                      <p> Designed and developed the frontend UI/UX for Kiran Foods, enhancing the user experience with a clean, modern interface. The design is fully responsive, optimized for desktops, tablets, and smartphones. Interactive elements and smooth animations were implemented to boost user engagement. Navigation was streamlined for easy access to features like search, filters, and order tracking. Accessibility was a key focus, ensuring usability for all users. This project showcases my skills in creating intuitive, user-friendly designs that combine aesthetics with functionality, resulting in a seamless and enjoyable food ordering experience.</p>
+                    </div>
+                    <div class="info">
+                      <h3>Project Info</h3>
+                      <u1>
+                        <li>Date - <span>3rd July,2024</span></li>
+                        <li>Client - <span>Personal Project</span></li>
+                        <li>Tools - <span>HTML,CSS,Java Script</span></li>
+                        <li>Web - <span><a href="https://raunak-gupta-12.github.io/food-ordering-website/" target="_blank">www.kiranfoods.com</a></span></li>
+                      </u1>
+                    </div>
+                  </div>
+                </div>
+                <!--portfolio item details end-->
+              </div>
+            </div>
+            <!--portfolio item end-->
+                  <!--portfolio item start-->
+      <div class="portfolio-item" data-category="graphic design">
+        <div class="portfolio-item-inner outer-shadow">
+          <div class="portfolio-item-img">
+            <img src="img/portfolio/thumb/project-3.png" alt="portfolio" data-screenshots="img/portfolio/large/project-3/1.png,img/portfolio/large/project-3/2.png,img/portfolio/large/project-3/3.png,img/portfolio/large/project-3/4.png,img/portfolio/large/project-3/5.png,img/portfolio/large/project-3/6.jpeg,img/portfolio/large/project-3/7.jpg,img/portfolio/large/project-3/8.png,img/portfolio/large/project-3/9.png,img/portfolio/large/project-3/10.png,img/portfolio/large/project-3/11.png,img/portfolio/large/project-3/12.png">
+            <!--view project btn-->
+            <span class="view-project">view project</span>
+          </div>
+          <p class="portfolio-item-title">Logo Work</p>
+          <!--portfolio item details start-->
+          <div class="portfolio-item-details">
+            <div class="row">
+              <div class="description">
+                <h3>Project Brief:</h3>
+                <p> I specialize in logo design using Adobe Photoshop, Illustrator, and InDesign to create captivating logos for organizations, businesses, and startups. My designs receive commendable feedback for creativity and precision.</p>
+              </div>
+              <div class="info">
+                <h3>Project Info</h3>
+                <u1>
+                  <li>Date - <span>2021-24</span></li>
+                  <li>Client - <span>various clients</span></li>
+                  <li>Tools - <span>photoshop, illustrator, canva</span></li>
+                  <li>Web - <span><a href="https://drive.google.com/drive/folders/1C9OTXiCEc6sGCUrcVKqfX0_5R7u-dQ_e?usp=sharing" target="_blank">www.logodrive.com</a></span></li>
+                </u1>
+              </div>
+            </div>
+          </div>
+          <!--portfolio item details end-->
+        </div>
+      </div>
+      <!--portfolio item end-->
+       <!--portfolio item start-->
+     <div class="portfolio-item" data-category="web-application">
+      <div class="portfolio-item-inner outer-shadow">
+        <div class="portfolio-item-img">
+          <img src="img/portfolio/thumb/project-4.jpg" alt="portfolio" data-screenshots="img/portfolio/large/project-4/1.jpg,img/portfolio/large/project-4/2.png,img/portfolio/large/project-4/3.png,img/portfolio/large/project-4/4.jpg,img/portfolio/large/project-4/2.png,img/portfolio/large/project-4/5.png">
+          <!--view project btn-->
+          <span class="view-project">view project</span>
+        </div>
+        <p class="portfolio-item-title">College Event Website</p>
+        <!--portfolio item details start-->
+        <div class="portfolio-item-details">
+          <div class="row">
+            <div class="description">
+              <h3>Project Brief:</h3>
+              <p> I developed a dynamic college club website using HTML, CSS, JavaScript, and Java, with backend functionality supported by Node.js. This project aimed to enhance user engagement through interactive sections for events, team profiles with names and photos, downloadable schedules, social media integration, and comprehensive club and coding team details. It serves as a robust platform for community interaction and information dissemination within the college club environment.</p>
+            </div>
+            <div class="info">
+              <h3>Project Info</h3>
+              <u1>
+                <li>Date - <span>june, 2022</span></li>
+                <li>Client - <span>College</span></li>
+                <li>Tools - <span>html,css,js,java</span></li>
+                <li>Web - <span><a href="https://raunak-gupta-12.github.io/agaaz_site/" target="_blank">www.agaaz_site.com</a></span></li>
+              </u1>
+            </div>
+          </div>
+        </div>
+        <!--portfolio item details end-->
+      </div>
+    </div>
+    <!--portfolio item end-->
+     <!--portfolio item start-->
+     <div class="portfolio-item" data-category="web-application">
+      <div class="portfolio-item-inner outer-shadow">
+        <div class="portfolio-item-img">
+          <img src="img/portfolio/thumb/project-5.jpg" alt="portfolio" data-screenshots="img/portfolio/large/project-5/1.jpg">
+          <!--view project btn-->
+          <span class="view-project">view project</span>
+        </div>
+        <p class="portfolio-item-title">GYM landing page</p>
+        <!--portfolio item details start-->
+        <div class="portfolio-item-details">
+          <div class="row">
+            <div class="description">
+              <h3>Project Brief:</h3>
+              <p> Crafted and implemented the UI/UX for raunak fitness Gym’s landing page, emphasizing a sleek, contemporary look to draw in potential clients. The design is fully responsive, ensuring optimal performance on desktops, tablets, and smartphones. Key features include engaging animations, compelling visuals, and prominent calls-to-action to enhance user interaction. The layout was optimized to present vital information such as gym amenities, membership plans, and class timetables effectively. Included a user-friendly registration form to facilitate easy sign-ups. Prioritized accessibility to ensure the page is usable by everyone. This project highlights my ability to design intuitive, attractive interfaces that effectively showcase the gym’s offerings and drive membership interest.</p>
+            </div>
+            <div class="info">
+              <h3>Project Info</h3>
+              <u1>
+                <li>Date - <span>5th June,2024</span></li>
+                <li>Client - <span>Personal Project</span></li>
+                <li>Tools - <span>HTML,CSS,Java Script</span></li>
+                <li>Web - <span><a href="https://raunak-gupta-12.github.io/gym/" target="_blank">www.gym.com</a></span></li>
+              </u1>
+            </div>
+          </div>
+        </div>
+        <!--portfolio item details end-->
+      </div>
+    </div>
+    <!--portfolio item end-->
+     <!--portfolio item start-->
+     <div class="portfolio-item" data-category="graphic design">
+      <div class="portfolio-item-inner outer-shadow">
+        <div class="portfolio-item-img">
+          <img src="img/portfolio/thumb/project-6.png" alt="portfolio" data-screenshots="img/portfolio/large/project-6/1.png,img/portfolio/large/project-6/2.png,img/portfolio/large/project-6/3.png,img/portfolio/large/project-6/4.png,img/portfolio/large/project-6/5.png,img/portfolio/large/project-6/6.png,img/portfolio/large/project-6/7.png,img/portfolio/large/project-6/8.png">
+          <!--view project btn-->
+          <span class="view-project">view project</span>
+        </div>
+        <p class="portfolio-item-title">Banners & T-shirt Design</p>
+        <!--portfolio item details start-->
+        <div class="portfolio-item-details">
+          <div class="row">
+            <div class="description">
+              <h3>Project Brief:</h3>
+              <p>I have expertise in T-shirt design, poster, and banner creation using Adobe Photoshop, Illustrator, and InDesign. I've produced impressive designs for organizations, businesses, and startups, receiving positive reviews for creativity and quality.</p>
+            </div>
+            <div class="info">
+              <h3>Project Info</h3>
+              <u1>
+                <li>Date - <span>2021 - 2024</span></li>
+                <li>Client - <span>various clients</span></li>
+                <li>Tools - <span>photoshop, illustrator, canva</span></li>
+                <li>Web - <span><a href="https://drive.google.com/drive/folders/17gO9BIlaui00HqccvKPHfbPVk6vvg5yR?usp=drive_link" target="_blank">www.work.com</a></span></li>
+              </u1>
+            </div>
+          </div>
+        </div>
+        <!--portfolio item details end-->
+      </div>
+    </div>
+    <!--portfolio item end-->
+    </div>
+    <!--portfolio items end-->
+    
+  </div>
+</section>
+<!--portfolio end-->
+
+<!-- testimonial start -->
+<section class="testimonial-section section" id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2 data-heading="testimonial">Client Speak</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="testi-box">
+        <div class="testi-slider outer-shadow">
+          <div class="testi-slider-container">
+             <!-- testi item start -->
+              <div class="testi-item">
+                <i class="fas fa-quote-left left"></i>
+                <i class="fas fa-quote-right right"></i>
+                <p>Throughout his project, he showed a willingness to learn and take on new challenges, always seeking to
+                  improve his skills and expand his knowledge of graphic design. He was a valuable
+                  member of our team, and we are confident that he has the potential to be a successful
+                  graphic designer in his future endeavors.</p>
+                <img src="img/testimonial/2.png" alt="testimonial">
+                <span>Riverside Visa</span>
+              </div>
+              <!-- testi item end -->
+
+               <!-- testi item start -->
+               <div class="testi-item active">
+                <i class="fas fa-quote-left left"></i>
+                <i class="fas fa-quote-right right"></i>
+                <p>Throughout his project, Raunak demonstrated a keen eye for detail, a strong sense of
+                  design, and an ability to work collaboratively with others. He played an instrumental
+                  role in designing marketing materials, creating website graphics, and developing
+                  branding concepts for our clients. His work was consistently of a high quality, and he
+                  completed tasks in a timely and efficient manner.</p>
+                <img src="img/testimonial/1.jpeg" alt="testimonial">
+                <span>Beyond Immigration</span>
+              </div>
+              <!-- testi item end -->
+                <!-- testi item start -->
+              <div class="testi-item">
+                <i class="fas fa-quote-left left"></i>
+                <i class="fas fa-quote-right right"></i>
+                <p>Raunak Gupta's logo for BTech Momo Wala beautifully merges modern aesthetics with our tradition, capturing our brand's essence and earning widespread acclaim for its creativity and relevance.</p>
+                <img src="img/testimonial/3.png" alt="testimonial">
+                <span>Btech MOMO wala</span>
+              </div>
+              <!-- testi item end -->
+          </div>
+        </div>
+        <div class="testi-slider-nav">
+          <span class="prev outer-shadow hover-in-shadow"><i class="fas fa-angle-left"></i></span>
+          <span class="next outer-shadow hover-in-shadow"><i class="fas fa-angle-right"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- testimonial end -->
+
+<!-- contact start -->
+ <section class="contact-section section" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2 data-heading="contact">Get In Touch</h2>
+      </div>
+    </div>
+    <div class="row">
+      <!-- contact item start -->
+       <div class="contact-item">
+        <div class="contact-item-inner outer-shadow">
+          <i class="fas fa-phone"></i>
+          <span>Phone</span>
+          <p>+91 8887631091</p>
+        </div>
+        
+       </div>
+       <!-- contact item end -->
+        <!-- contact item start -->
+       <div class="contact-item">
+        <div class="contact-item-inner outer-shadow">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+          <p>raunakgupta200212@gmail.com</p>
+        </div>
+        
+       </div>
+       <!-- contact item end -->
+        <!-- contact item start -->
+       <div class="contact-item">
+        <div class="contact-item-inner outer-shadow">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Address</span>
+          <p>Greater Noida</p>
+        </div>
+        
+       </div>
+       <!-- contact item end -->
+    </div>
+    <div class="row">
+      <div class="contact-form">
+        <form>
+          <div class="row">
+            <div class="w-50">
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input type="text" placeholder="Name" class="input-control">
+              </div>
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input type="email" placeholder="Email" class="input-control">
+              </div>
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input type="text" placeholder="Subject" class="input-control">
+              </div>
+            </div>
+            <div class="w-50">
+              <div class="input-group outer-shadow hover-in-shadow">
+                <textarea class="input-control" placeholder="Message"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="submit-btn">
+              <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+ </section>
+<!-- contact end -->
+
+<!--portfolio popup start-->
+ <div class="pp portfolio-popup">
+  <div class="pp-details">
+    <div class="pp-details-inner">
+      <div class="pp-title">
+        <h2>Personal Portfolio</h2>
+        <p>Category - <span class="pp-project-category">Web Application</span></p>
+      </div>
+      <div class="pp-project-details">
+        <div class="row">
+          <div class="description">
+            <h3>Project Brief:</h3>
+            <p> Good morning to one and all present here. My name is raunak gupta and i completed my schooling from dr virendra swarup public school kanpur. I am very excited and happy to come to this college as it will provide me freedom to explore new things. Here i can also polish my skills and personality. My hobbies are playing badminton and chess.</p>
+          </div>
+          <div class="info">
+            <h3>Project Info</h3>
+            <u1>
+              <li>Date - <span>2022</span></li>
+              <li>Client - <span>xyz</span></li>
+              <li>Tools - <span>html,css,js</span></li>
+              <li>Web - <span><a href="#">www.domain.com</a></span></li>
+            </u1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="separator"></div>
+  <div class="pp-main">
+    <div class="pp-main-inner">
+      <div class="pp-project-details-btn outer-shadow hover-in-shadow">Project Details<i class="fas fa-plus"></i></div>
+      <div class="pp-close outer-shadow hover-in-shadow">&times;</div>
+      <img src="img/portfolio/large/project-1/1.png" alt="img" class="pp-img outer-shadow" >
+      <div class="pp-counter">1 of 6</div>
+    </div>
+    <div class="pp-loader">
+      <div></div>
+    </div>
+    <!-- pp navigation-->
+    <div class="pp-prev"><i class="fas fa-play"></i></div>
+      <div class="pp-next"><i class="fas fa-play"></i></div>
+  </div>
+</div>
+<!--portfolio popup end-->
+
+<!-- style switcher start -->
+ <div class="style-switcher outer-shadow">
+  <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+    <i class="fas fa-cog fa-spin"></i>
+  </div>
+  <div class="day-night s-icon outer-shadow hover-in-shadow">
+    <i class="fas"></i>
+  </div>
+  <h4>Theme Colors</h4>
+  <div class="colors">
+    <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+    <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+    <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+    <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+    <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+  </div>
+  
+ </div>
+ <!-- style switcher end-->
+
+
 <!-- main js -->
 <script src="js/main.js"></script>
 <!-- style switcher js -->
