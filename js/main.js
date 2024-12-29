@@ -276,3 +276,10 @@ window.addEventListener("load",() =>{
         document.querySelector(".preloader").style.display="none";
     },600)
 })
+
+
+/*---- Update cc year----*/
+document.addEventListener("DOMContentLoaded", function () {
+    const currentYear = new Date().getFullYear();
+    document.getElementById("current-year").textContent = currentYear;
+});
